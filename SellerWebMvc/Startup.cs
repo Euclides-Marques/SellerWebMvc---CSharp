@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SellerWebMvc.Data;
+using SalesWebMvc.Data;
 
 namespace SellerWebMvc
 {
@@ -36,7 +37,7 @@ namespace SellerWebMvc
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<SellerWebMvcContext>(options =>
+            services.AddDbContext<SalesWebMvcContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SellerWebMvcContext")));
 
             services.AddScoped<SeedingService>();

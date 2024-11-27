@@ -8,7 +8,7 @@ using SellerWebMvc.Data;
 
 namespace SellerWebMvc.Migrations
 {
-    [DbContext(typeof(SellerWebMvcContext))]
+    [DbContext(typeof(SalesWebMvcContext))]
     partial class SellerWebMvcContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

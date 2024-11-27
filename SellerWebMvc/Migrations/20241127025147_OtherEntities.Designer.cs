@@ -9,7 +9,7 @@ using SellerWebMvc.Data;
 
 namespace SellerWebMvc.Migrations
 {
-    [DbContext(typeof(SellerWebMvcContext))]
+    [DbContext(typeof(SalesWebMvcContext))]
     [Migration("20241127025147_OtherEntities")]
     partial class OtherEntities
     {

@@ -8,9 +8,9 @@ using SellerWebMvc.Models.ViewModels;
 
 namespace SellerWebMvc.Data
 {
-    public class SellerWebMvcContext : DbContext
+    public class SalesWebMvcContext : DbContext
     {
-        public SellerWebMvcContext (DbContextOptions<SellerWebMvcContext> options)
+        public SalesWebMvcContext (DbContextOptions<SalesWebMvcContext> options)
             : base(options)
         {
         }
