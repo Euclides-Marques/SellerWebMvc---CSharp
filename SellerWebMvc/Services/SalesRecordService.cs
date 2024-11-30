@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SellerWebMvc.Data;
 using SellerWebMvc.Models;
+using SellerWebMvc.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace SellerWebMvc.Services
             }
             return await result
                 .Include(x => x.Seller)
-                .Include(x => x.Seller.Department)
+                    .ThenInclude(x => x.Department)
                 .OrderByDescending(x => x.Date)
                 .ToListAsync();
         }
